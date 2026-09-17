@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>My doctors appointment</title>
+</head>
+
+<body>
+    <h1>🏥 My Doctor's Appointment</h1>
+    <p>Fill in the form below to book your appointment!</p>
+    <hr>
+    <form>
+
+        <fieldset>
+
+            <legend>Personal Details</legend>
+
+            <label>Your Name</label> <br>
+            <input type="text" id="name" placeholder="enter your full name"> <br> <br>
+
+            <label>Patient Id</label> <br>
+            <input type="password" id="Pid" placeholder="Your secret id"> <br> <br>
+
+            <label>Date of birth</label> <br>
+            <input type="date" id="dob" > <br> <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Your Visit</legend>
+
+            <label>Choose your Doctor</label> <br>
+            <select id="Doctor">
+                <option value="">-- select a doctor--</option>
+                <option value="Dr-ray">Dr ray-general</option>
+                <option value="Dr-Lee">Dr lee-teeth</option>
+                <option value="Dr-sam">Dr sam-eyes</option>
+            </select> <br> <br>
+
+            <label>Why are you visiting?</label> <br>
+            <input type="radio" name="reason" value="fever"> Fever <br>
+            <input type="radio" name="reason" value="cold"> Cold <br>
+            <input type="radio" name="reason" value="checkup"> Checkup <br>
+            <input type="radio" name="reason" value="tooth"> Tooth Pain <br>
+
+            <label>Any notes for the doctor?</label> <br>
+            <textarea id="notes" rows="3" cols="35" placeholder="e.g. I have had a sore throat for 2 days."></textarea> <br>
+            
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Preffered visit day</legend>
+            <input type="checkbox" value="mon"> monday <br>
+            <input type="checkbox" value="wed"> wednesday <br>
+            <input type="checkbox" value="fri"> friday <br>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="book my appointment">
+
+
+
+    </form>
+</body>
+
+</html>
